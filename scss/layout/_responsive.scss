@@ -1,0 +1,86 @@
+@media screen and (min-width:1224px) {}
+
+@media (max-width:768px) {
+    .top {
+        p {
+            margin-bottom: 8px;
+        }
+    }
+
+    .top .email-cls {
+        border-left: 0 solid white;
+        border-right: 0 solid white;
+        padding: 0;
+    }
+
+    .faq-banner .container .search-me {
+        position: relative;
+        width: 100%;
+    }
+
+    #testomonial .test-box .d-flex {
+        gap: 1px;
+    }
+
+    .top-heading {
+        h4 {
+            font-size: 26px;
+            font-weight: 400;
+        }
+
+        &::after {
+            width: 56px;
+            height: 3px;
+        }
+    }
+
+    .heading {
+        h1 {
+            font-size: 30px;
+            font-weight: 500;
+        }
+
+        h2 {
+            font-size: 30px;
+            font-weight: 500;
+        }
+    }
+
+    .sub-heading {
+        font-size: 16px;
+    }
+
+    a {
+        .read-more {
+            font-size: 20px;
+        }
+    }
+
+    .text-heading {
+        h5 {
+            font-size: 20px;
+        }
+    }
+
+    .text-sub-heading {
+        p {
+            font-size: 15px;
+        }
+    }
+
+    .banner {
+        sub-heading {
+            font-size: 15px;
+        }
+    }
+    #testomonial .test-box{
+        width: 96%;
+        padding: 29px 48px;
+        margin: 16px auto;
+        .test-box-img {
+            width: 40%;
+        }
+    }
+}
+
+@media (max-width:600px) {}

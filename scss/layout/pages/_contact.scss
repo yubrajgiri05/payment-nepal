@@ -1,0 +1,84 @@
+#contact-us {
+    .contact-connect {
+        @include flex-center;
+        flex-direction: column;
+        margin-top: 8rem;
+        .icon{
+            color: #000;
+            font-size: 24px;
+        }
+    }
+
+    @media (max-width:991px) {
+        .contact-connect {
+            margin-top: 1rem;
+        }
+    }
+
+    .contact-contact {
+        .flex {
+            @include flex-center;
+            flex-direction: column;
+
+            .icon {
+                color: #1DB14B;
+                font-size: 36px;
+            }
+
+            .icon-text {
+                color: #1DB14B;
+                text-align: center;
+                font-family: Overpass;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: 0.2px;
+            }
+
+            .icon-subtext {
+                color: #000;
+                text-align: center;
+                font-family: Overpass;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 0.2px;
+            }
+
+        }
+    }
+
+    .contact-write {
+        .forme {
+            border-radius: 114px 0px 115px 0px;
+            background: #D7F5DC;
+           padding:15% 10%;
+
+        }
+            .form-group {
+               
+                .form-control {
+                    width: 100%;
+                    height: 40px;
+                    margin: 10px 0
+                }
+            }
+            .button{
+                @include flex-center;
+                margin-top: 2rem;
+                .btn{
+                    border-radius: 11px;
+                    background: #1DB14B;
+                    box-shadow:none ;
+                    color: white;
+                }
+            }
+            @media (max-width:426px) {
+                .forme {
+                    border-radius: 68px 0px 68px 0px;
+                }
+        }
+    }
+}

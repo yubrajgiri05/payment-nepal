@@ -1,0 +1,353 @@
+.banner {
+    background-color: rgba(232, 252, 222, 0.32);
+
+
+    .sub-heading {
+        color: #1D6B2C;
+        text-align: justify;
+        font-family: Overpass;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin: 27px 0;
+    }
+
+   @media (max-width: 768px) {
+        .sub-heading {
+            font-size: 20px;
+        }
+    }
+
+}
+
+#about-us {
+
+    figure {
+        position: relative;
+
+        .fig-box {
+            position: absolute;
+            top: 39%;
+            left: 47%;
+            width: 54px;
+            height: 51px;
+            background: #2C2D75;
+            box-shadow: 0px 0px 41px 0px rgba(0, 0, 0, 0.70);
+            color: white;
+            @include flex-center;
+            border-radius: 4px;
+
+            a {
+                text-decoration: none;
+                color: white;
+                font-size: 36px;
+            }
+        }
+    }
+
+    padding-top: 2rem;
+
+    .sub-heading {
+        margin: 20px 0 70px;
+    }
+
+    .about-text {
+        width: 58%;
+
+    }
+
+}
+
+.payment-solution {
+    position: relative;
+    width: 100%;
+    padding-top: 40px;
+
+    &::after {
+        content: "";
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 294px;
+        z-index: -1;
+        background-color: #D7F5DC;
+    }
+
+    .card {
+        .read-more {
+            font-size: 13px;
+        }
+    }
+}
+
+#features {
+    .card {
+        margin-top: 50px;
+        background: #FFF;
+        box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.25);
+        border-radius: 0;
+        transition: all 1s ease;
+
+        &:hover {
+            background-color: #4f9b5f;
+            color: white;
+
+            .card-description,
+            .read-more,
+            .card-title {
+                color: white;
+            }
+
+            figure {
+                background-color: #2C2D75;
+            }
+        }
+
+
+        figure {
+            border-radius: 50%;
+            width: 129px;
+            height: 129px;
+            margin-top: -80px;
+
+            img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+
+        .card-description {
+            text-align: justify;
+            padding: 0 2rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 7;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            margin-bottom: 53px;
+            color: #000;
+            font-family: Overpass;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 25px;
+            letter-spacing: -0.3px;
+        }
+
+        .read-more {
+            position: absolute;
+            bottom: 45px;
+            right: 57px;
+            font-size: 15px;
+        }
+    }
+
+    .features-change {
+        background: #D7F5DC;
+        margin-top: 7rem;
+
+        ul {
+            li {
+                color: #000;
+                font-family: Overpass;
+                font-size: 25px;
+                font-style: normal;
+                font-weight: 3000;
+                line-height: 3rem;
+                letter-spacing: 0.9px;
+            }
+            @media (max-width: 768px) {
+               
+                        li{
+                            font-size: 21px;
+                            line-height: 33px;
+                            letter-spacing: 4px;
+                        }
+                    }
+        }
+      
+        figure {
+            height: 454px;
+
+            img {
+                object-fit: contain;
+            }
+        }
+    }
+}
+
+#service {
+    .flex {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 20px;
+
+        figure {
+            width: 60px;
+            height: 59px;
+            background-color: $base-color;
+            @include flex-center;
+            border-radius: 10px;
+            padding: 2rem;
+
+            img {
+                width: 39px;
+                height: 39px;
+
+            }
+        }
+
+        .text {
+            .text-heading {
+                color: #2C2D75;
+                text-align: justify;
+                font-family: Chivo;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 0.6px;
+            }
+
+            .text-sub-heading {
+                color: #000;
+                text-align: justify;
+                font-family: Overpass;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: -0.2px;
+            }
+        }
+    }
+}
+
+#connection {
+    background-color: #D7F5DC;
+
+    figure {
+
+        img {
+            width: 100%;
+            height: 123px;
+            width: 188px;
+            object-fit: contain;
+        }
+    }
+
+    .owl-item{
+        width: 100%;
+    }
+    .owl-carousel {
+        display: block;
+        gap: 1px;
+        transform: rotate(90deg);
+      }
+      
+      .item {
+        transform: rotate(-90deg);
+      }
+      
+      div.owl-carousel .owl-nav .owl-prev,
+      div.owl-carousel .owl-nav .owl-next {
+        font-size: 36px;
+        display: none;
+      }
+    
+}
+
+#testomonial {
+
+    @media (max-width:768px) {
+        .flex {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .owl-nav {
+            display: none;
+        }
+    }
+
+    .owl-stage-outer {
+        margin: 10px 0;
+    }
+
+    .owl-nav {
+
+        .owl-prev {
+            span {
+                font-size: 29px;
+                color: white;
+            }
+
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #5BB95B73;
+            position: absolute;
+            top: 45%;
+            left: 0;
+        }
+
+        .owl-next {
+            span {
+                font-size: 29px;
+                color: white;
+            }
+
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #5BB95B73;
+            position: absolute;
+            top: 45%;
+            right: 0;
+        }
+    }
+
+    .icon {
+        font-size: 20px;
+        color: black;
+    }
+
+    .test-box {
+        @include flex-center;
+        background: #FFF;
+        box-shadow: 0px 0px 22px 0px rgba(0, 0, 0, 0.25);
+        width: 80%;
+        padding: 31px 74px;
+        margin: 10px auto;
+
+        .d-flex {
+            flex-wrap: nowrap;
+            gap: 2rem;
+
+            .test-box-img {
+                display: flex;
+                align-items: center;
+                flex-shrink: 0;
+
+                figure {
+                    flex-shrink: 1;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                }
+
+            }
+
+            figure {
+                img {
+                    width: 63px;
+                    height: 64px;
+                }
+            }
+        }
+    }
+}

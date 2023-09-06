@@ -1,0 +1,82 @@
+.top {
+    background-color: $base-color;
+    width: 100%;
+    height: auto;
+
+    .justify-content-start {
+        display: flex;
+        column-gap: 25px;
+    }
+
+    .email-cls {
+        border-left: 2px solid white;
+        border-right: 2px solid white;
+        padding: 0 22px;
+        height: 27px;
+    }
+
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .icon {
+        font-size: 20px;
+
+    }
+
+}
+
+nav {
+    background-color: rgba(232, 252, 222, 0.32);
+    box-shadow: 0px 4px 21px 0px rgba(0, 0, 0, 0.25);
+
+
+    .nav-item .nav-link {
+        color: #2C2D75;
+        font-family: Chivo;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .navbar-brand>figure>img {
+        width: 161px;
+        height: 74px;
+    }
+
+    .form-control {
+        width: 241px;
+        height: 35px;
+        border-radius: 5px;
+        border: 1px solid #2C2D75;
+        padding-left: 40px;
+
+    }
+
+    .search-button {
+        position: absolute;
+
+        .search-icon {
+            position: relative;
+            top: 7px;
+            left: -228px;
+        }
+    }
+
+
+}
+
+@media (max-width:991px) {
+    nav .search-button {
+        position: inherit;
+    }
+    nav .nav-item .nav-link {
+        font-size: 25px;
+        font-weight: 500;
+        margin-top: 15px;
+    }
+
+}
